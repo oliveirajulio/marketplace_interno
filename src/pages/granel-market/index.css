@@ -1,5 +1,5 @@
 .ctn-granel {
-    height: auto;
+    height: 100vh;
     width: 100vw;
     position: relative;
     margin: 0;
@@ -48,8 +48,7 @@
 .img {
     margin-top: -27vh;
     margin-left: 50vw ;
-    width: 660px; /* Largura da div */
-    height: 177px; /* Altura da div */
-    background-image: url('granel.jpg'); /* Caminho da imagem */
-    background-position: center; /* Centraliza a imagem */
+    width: 50vw; 
+    height: 27vh;
+    background-image: url('granel.jpg');
 }
