@@ -1,6 +1,6 @@
 .container {
     height: 100vh;
-    width: 100vw;
+    width: 98vw;
     position: relative;
     margin: 0;
     padding: 0;
@@ -12,12 +12,13 @@
     position: fixed;
     top:0;
     left: 0;
-    height: 110px;
+    height: 15vh;
     background-image: url(./logo2.png);
     background-repeat: no-repeat;
-    background-size: 75px;
-    background-position-y: -8px;
-    background-color: var(--color_2);
+    background-size: 280px;
+    background-position-y: -30px;
+    background-position-x: -60px ;
+    background-color: var(--color_3);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -69,6 +70,7 @@
     color: var(--color_3);
     font-size: 18px;
     margin-top: 80px;
+    margin-left: 2vw;
     padding-top: 30px;
     flex-direction: column;
     align-items: center; 
@@ -82,22 +84,52 @@
 .nav2 {
     color: var(--color_3);
     margin-top: 5vh;
-    margin-left: 28vw;
+    margin-left: 24vw;
+}
+
+.nav2 p:first-child {
+    background-color: var(--color_3);
+    color: var(--color_2);
 }
 
 
 .nav2 p {
     border-radius: 30px;
-    border: 1px solid rgba(0, 37, 0, 0.2);
+    border: 1px solid rgba(0, 37, 0, 0.3);
     display: inline;
     font-size: 14px;
     font-weight: 500;
     list-style-type: none;
     margin-right: 10px;
     padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .nav2 p:hover {
     cursor: pointer;
     border: 1.5px solid var(--color_3);
+}
+
+.ctn-dynamic {
+    padding: 3vh;
+    margin: 2vw;
+    margin-top: 3vh;
+    height:64vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.nav-move {
+    color: var(--color_3);
+    display: inline-flex;
+    gap: 0.6vw;
+
+}
+
+.nav-move h4 {
+    margin-top: 0.5vh;
+    font-weight: 600;
 }
