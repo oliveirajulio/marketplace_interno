@@ -1,15 +1,14 @@
 .ctn-granel {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
+    height: 500vh;
+    width: 98vw;
     margin: 0;
     padding: 0;
 }
 
-.main-header {
+.main-header1 {
+    position: fixed;
     padding: 0;
     margin: 0;
-    position: fixed;
     top:0;
     left: 0;
     height: 14vh;
@@ -20,6 +19,39 @@
     background-position-x: -60px ;
     background-color: var(--color_3);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+}
+
+.main-filter {
+    position: sticky;
+    top: 15vh; /* Fica abaixo do header */
+    height: 8vh;
+    width: 100%;
+    background-color: #f9f9f9;
+    display: flex;
+    z-index: 998;
+
+}
+
+.nav1 {
+    margin-left: 1vw;
+}
+
+.nav1 button {
+    font-weight: 500;
+    margin-top: 2vh;
+    border: 1px solid rgba(0, 37, 0, 0.3);
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 1.5vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    margin-right: 0.5vw;
+}
+
+.nav1 button:hover {
+    cursor: pointer;
+    border: 1.5px solid var(--color_3);
 }
 
 .main-info {
@@ -28,12 +60,12 @@
     background-color: var(--color_4);
     color: var(--color_3);
     font-size: 18px;
-    margin-top: 80px;
     padding-top: 30px;
     padding-left: 40px;
     flex-direction: column;
     align-items: center; 
     text-align: start; 
+    margin-top: 15vh;
 }
 
 .main-info h1 {
@@ -47,8 +79,8 @@
 }
 
 .img {
-    margin-top: -27vh;
-    margin-left: 50vw ;
+    margin-top: -30vh;
+    margin-left: 48.9vw ;
     width: 50vw; 
     height: 27vh;
     background-image: url('granel.jpg');
